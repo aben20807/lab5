@@ -58,7 +58,8 @@ public:
     }
     friend istream &operator >>(istream &in, HugeInt &p)
     {
-        int i,tmp;
+        int i;
+        long tmp;
         in >> tmp;
         for(i=0;i<SIZE;i++)
         {
@@ -120,9 +121,9 @@ int main()
      HugeInt result; 
      cin >> x; 
      result = x+y; 
-     cout << x << "+" << y << " = " << result << endl; 
+     cout << x << " + " << y << " = " << result << endl; 
      result = z-x; 
-     cout << z << "-" << x << " = " << result << endl; 
+     cout << z << " - " << x << " = " << result << endl; 
      //cout << result <<endl;
      return 0; 
 }
